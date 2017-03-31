@@ -1,4 +1,5 @@
 #---coding:utf-8---
+#此代码在pyhton2.7上测试的
 import urllib2
 import json
 ranking = 1
@@ -12,3 +13,4 @@ for html in htmls:
     for key in hjson['subjects']:
         print str(ranking) + ' : ' + key['title'] + ',' + key['year'] + ',' + str(key['rating']['average'])
         ranking += 1
+        
