@@ -37,7 +37,7 @@ def conn_db():
        host='127.0.0.1',
        port=3306,
        user="root",
-       password="fangplus2190",
+       password="123123",
        charset='utf8'
    )
    cur = conn.cursor()
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     cur.execute('CREATE DATABASE python_movie')
     sql = """CREATE TABLE `python_movie`.`movies`(
            title CHAR(255) NOT NULL,
-           TIME CHAR(12) NOT NULL,
+           TIME DATETIME,
            address CHAR(255) NOT NULL,
            actor CHAR(255) NOT NULL,
            grade FLOAT NOT NULL,
